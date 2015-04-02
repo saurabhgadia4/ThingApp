@@ -1,2 +1,2 @@
 # ThingApp
-Basic desktop application to access thingiverse API
+Basic python desktop application to access thingiverse API

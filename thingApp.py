@@ -42,7 +42,7 @@ class Driver():
 			print 'Please Select STL to Download'
 			stlNo = int(raw_input())
 
-			print fileList[stlNo-1]
+			#print fileList[stlNo-1]
 			request = requests.get(fileList[stlNo-1][2], stream=True)
 			print 'Downloading ', fileList[stlNo-1][1]
 			with open(fileList[stlNo-1][1], 'w') as f:
@@ -52,7 +52,7 @@ class Driver():
 						fileLength += len(chunk)
 						f.write(chunk)
 						f.flush()	
-				print fileLength, ' Downloaded'
+				print (fileLength/1024), 'KB Downloaded'
 		else:
 			print ' No files to download!!'
 

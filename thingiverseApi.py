@@ -23,7 +23,7 @@ class Thingiverse:
 				base_url='https://api.thingiverse.com')
 
 		#self._get_access_code()
-		self._access_code = 'f1ea7c97c8c648f7b1cfb09efd92c0ea'
+		self._access_code = 'cc3b8745dbaa5fab85f7d43d34b2877c'
 		self._get_access_token()
 
 	def _get_access_token(self):
@@ -35,6 +35,7 @@ class Thingiverse:
 			#self._get_access_code()
 			#self._get_access_token()
 			print e
+			sys.exit(1)
 
 
 	def _get_access_code(self):
